@@ -53,7 +53,7 @@
 // the management SoC to run a startup program to configure the GPIOs.
 
 `define USER_CONFIG_GPIO_5_INIT  13'h0403
-`define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_INVALID
+`define USER_CONFIG_GPIO_6_INIT  13'h0403
 `define USER_CONFIG_GPIO_7_INIT  13'h0403
 `define USER_CONFIG_GPIO_8_INIT  13'h0403
 `define USER_CONFIG_GPIO_9_INIT  13'h0403
