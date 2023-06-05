@@ -205,7 +205,7 @@ Xsky130_fd_sc_hvl__buf_8_0 sky130_fd_sc_hvl__inv_8_0/A vss vdd3v3 porb_h vss vdd
 + sky130_fd_sc_hvl__buf_8
 .ends
 
-.subckt user_analog_proj_example example_por_0/por_l example_por_1/por_l example_por_1/vdd3v3
+.subckt RX_Frontend_out example_por_0/por_l example_por_1/por_l example_por_1/vdd3v3
 + example_por_1/porb_l example_por_0/vdd3v3 example_por_1/porb_h example_por_0/porb_l
 + example_por_0/porb_h VSUBS example_por_0/vdd1v8 example_por_1/vdd1v8
 Xexample_por_0 example_por_0/vdd3v3 VSUBS example_por_0/porb_h example_por_0/por_l
@@ -320,8 +320,8 @@ Xexample_por_1 example_por_1/vdd3v3 VSUBS example_por_1/porb_h example_por_1/por
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-Xuser_analog_proj_example_0 io_out[16] io_out[12] vdda1 io_out[11] io_analog[4] gpio_analog[3]
-+ io_out[15] gpio_analog[7] vssa1 vccd1 vccd1 user_analog_proj_example
+XRX_Frontend_out_0 io_out[16] io_out[12] vdda1 io_out[11] io_analog[4] gpio_analog[3]
++ io_out[15] gpio_analog[7] vssa1 vccd1 vccd1 RX_Frontend_out
 R0 vssa1 io_clamp_low[2] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
 R1 io_oeb[15] vssd1 sky130_fd_pr__res_generic_m3 w=560000u l=600000u
 R2 io_analog[4] io_clamp_high[0] sky130_fd_pr__res_generic_m3 w=1.1e+07u l=250000u
